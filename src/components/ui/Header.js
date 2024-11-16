@@ -11,6 +11,7 @@ export default function Header() {
   const handleMobileView = () => {
     setOpen((show) => !show);
   };
+
   return (
     <div className="bg-black text-white">
       <nav className="container relative flex lg:flex-row justify-between items-center font-bold lg:text-lg capitalize p-5 md:p-0">
@@ -28,8 +29,12 @@ export default function Header() {
               <NavLink to="intermediate concepts" className="py-3 px-6 ">
                 intermediate
               </NavLink>
-              <li className="py-3 px-6 ">advance</li>
-              <li className="py-3 px-6 ">practical</li>
+              <NavLink to="advanced concepts" className="py-3 px-6 ">
+                advance
+              </NavLink>
+              <NavLink to="practical task" className="py-3 px-6 ">
+                practical
+              </NavLink>
             </ul>
           </div>
 
@@ -74,12 +79,18 @@ export default function Header() {
                 >
                   intermediate
                 </NavLink>
-                <li className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0">
+                <NavLink
+                  to="advanced concepts"
+                  className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0"
+                >
                   advance
-                </li>
-                <li className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0">
+                </NavLink>
+                <NavLink
+                  to="practical task"
+                  className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0"
+                >
                   practical
-                </li>
+                </NavLink>
               </ul>
             </div>
           )}

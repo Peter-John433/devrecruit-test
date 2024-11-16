@@ -33,7 +33,6 @@ export default function IntermediateConcepts() {
           <h3 className="text-lg lg:text-xl font-bold mt-3 lg:mt-3">
             using a fake Api to fetch product data from the server.
           </h3>
-          <p className="max-md:text-sm lg:leading-[28px]"></p>
           {/* mapped through product here */}
           <ul className="flex flex-col lg:flex-row justify-start items-start lg:items-center max-md:gap-y-5 lg:gap-x-5 mt-10">
             {products.map((product) => (
