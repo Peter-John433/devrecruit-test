@@ -19,11 +19,15 @@ export default function Header() {
           {/* destop view */}
           <div className="hidden md:flex">
             <ul className="flex flex-col lg:flex-row justify-center items-center">
-              <li className="py-3 px-6 ">home</li>
+              <NavLink to="/" className="py-3 px-6 ">
+                home
+              </NavLink>
               <NavLink to="basic concepts" className="py-3 px-6 ">
                 basic
               </NavLink>
-              <li className="py-3 px-6 ">intermediate</li>
+              <NavLink to="intermediate concepts" className="py-3 px-6 ">
+                intermediate
+              </NavLink>
               <li className="py-3 px-6 ">advance</li>
               <li className="py-3 px-6 ">practical</li>
             </ul>
@@ -52,18 +56,24 @@ export default function Header() {
           {open && (
             <div className="flex md:hidden absolute top-[100%] inset-x-0">
               <ul className="flex flex-col lg:flex-row justify-start items-center w-full">
-                <li className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0">
+                <NavLink
+                  to="/"
+                  className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0"
+                >
                   home
-                </li>
+                </NavLink>
                 <NavLink
                   to="basic concepts"
                   className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0"
                 >
                   basic
                 </NavLink>
-                <li className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0">
+                <NavLink
+                  to="intermediate concepts"
+                  className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0"
+                >
                   intermediate
-                </li>
+                </NavLink>
                 <li className="py-5 ps-5 bg-[#0d0d0d]  w-full inset-x-0">
                   advance
                 </li>

@@ -1,8 +1,8 @@
 export default function BasicConcepts() {
   return (
-    <div className="container max-md:px-5 mt-10">
+    <div className="container max-md:px-5 my-10">
       <div className="text-xl lg:text-2xl font-bold mb-3 lg:mb-5">
-        <span>Question 1:</span> <br />
+        <span className="text-red-500">Question 1:</span> <br />
         <span>Basic Concepts</span>
       </div>
       <div>
@@ -40,7 +40,7 @@ export default function BasicConcepts() {
       </div>
       <div>
         <div className="text-xl lg:text-2xl font-bold mt-5 lg:mt-8">
-          <span>Question 2:</span> <br />
+          <span className="text-red-500">Question 2:</span> <br />
           <span>What is JSX? Why is it used in React?</span>
         </div>
         <div>
