@@ -1,4 +1,4 @@
-import { useTodoContext } from "../../context/TodoProvider";
+import { useTodoContext } from "../../contextApi/TodoProvider";
 import Button from "../button/Button";
 
 export default function TaskList() {
@@ -38,23 +38,23 @@ export default function TaskList() {
   return (
     <div>
       <ul className="flex flex-row flex-wrap justify-start items-start lg:items-center gap-y-5 gap-x-5 mb-20">
-        {tasks.map((task) => (
+        {tasks.map((product) => (
           <li
             className="bg-[#0d0d0d] text-white p-2 font-bold rounded-md shadow-md flex justify-center items-center gap-x-3 text-sm "
-            key={task.id}
+            key={product.id}
           >
-            {task.title}
+            {product.title}
             <Button
               buttonStyle={buttonStyle1}
               onClick={() =>
-                handleEdit(task.id, prompt("edit task:", task.title))
+                handleEdit(product.id, prompt("edit product:", product.title))
               }
             >
               Edit
             </Button>
             <Button
               buttonStyle={buttonStyle2}
-              onClick={() => handleDelete(task.id)}
+              onClick={() => handleDelete(product.id)}
             >
               Delete
             </Button>

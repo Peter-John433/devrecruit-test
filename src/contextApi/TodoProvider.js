@@ -6,15 +6,15 @@ const TodoContext = createContext();
 export const TodoProvider = ({ children }) => {
   const [tasks, setTasks] = useState([]);
 
-  //fetch task from localstorage on initial load
+  //fetch task from localstorage on initial load using useEffect
   useEffect(() => {
     const saveTask = JSON.parse(localStorage.getItem("task")) || [];
     setTasks(saveTask);
   }, []);
 
   //add task
-  const addTask = (task) => {
-    const newTask = [...tasks, task];
+  const addTask = (myTask) => {
+    const newTask = [...tasks, myTask];
     setTasks(newTask);
     localStorage.setItem("task", JSON.stringify(newTask));
   };
@@ -42,7 +42,7 @@ export const TodoProvider = ({ children }) => {
   );
 };
 
-// Custom hook for easy access to context
+// am using Custom hook for easy access to context
 export const useTodoContext = () => {
   return useContext(TodoContext);
 };

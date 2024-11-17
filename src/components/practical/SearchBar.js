@@ -1,12 +1,12 @@
-import { useTodoContext } from "../../context/TodoProvider";
+import { useTodoContext } from "../../contextApi/TodoProvider";
 import { useState } from "react";
 
 export default function SearchBar() {
   const { tasks } = useTodoContext();
   const [search, setSearch] = useState("");
 
-  const filteredTasks = tasks.filter((task) =>
-    task.title.toLowerCase().includes(search.toLowerCase())
+  const filteredProduct = tasks.filter((product) =>
+    product.title.toLowerCase().includes(search.toLowerCase())
   );
   return (
     <div className="mb-20">
@@ -18,12 +18,12 @@ export default function SearchBar() {
         placeholder="search products..."
       />
       <ul className="flex justify-start items-center gap-5 mt-3">
-        {filteredTasks.map((task) => (
+        {filteredProduct.map((product) => (
           <li
             className="bg-black text-white px-3 flex justify-center items-center text-center rounded-md"
-            key={task.id}
+            key={product.id}
           >
-            {task.title}
+            {product.title}
           </li>
         ))}
       </ul>

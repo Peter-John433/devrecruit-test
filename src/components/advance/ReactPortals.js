@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ReactPortals() {
   return (
     <div>
@@ -11,15 +9,14 @@ export default function ReactPortals() {
         </span>
       </div>
       <p className="max-md:text-sm lg:leading-[28px] mt-5">
-        React Portals provide a way to render a component’s output outside of
-        its parent DOM hierarchy. This allows you to "portal" the children of a
-        component to a different part of the DOM tree, even if that part is
-        outside the normal React component tree structure.Normally, when React
-        renders a component, it does so within the parent component's DOM
-        container, but with portals, you can render a child component into a
-        completely different part of the DOM, even outside the parent component.
-        React portal is useful for things like <strong>Modal</strong>,
-        <strong>Popups</strong>, <strong>Overlay</strong> e.t.c
+        React Portals provide a way to render a component's output outside of
+        its parent DOM. This allows you to "portal" the children of a component
+        to a different part of the DOM tree, even if that part is outside the
+        normal React component tree structure.usually, when React renders a
+        component, it does so within the parent component's DOM container, but
+        with portals, you can render a child component into a completely
+        different part of the DOM. React portal is useful for things like
+        modal,popups e.t.c
       </p>
     </div>
   );

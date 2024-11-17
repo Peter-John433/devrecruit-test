@@ -9,16 +9,15 @@ export default function ContextApi() {
         </span>
       </div>
       <p className="max-md:text-sm lg:leading-[28px] mt-5">
-        The Context API is a built-in React feature that pass value throughout
-        the app manually without passing props down the tree,it's especially
-        useful for managing global state.
+        The Context API is used to pass value throughout the app manually
+        without passing props down the tree,it's especially useful for managing
+        global state.
         <br />
-        how context api manage global state, e.g, Let’s say you are building a
-        simple React app that manages a user’s authentication state globally.
+        how context api manage global state, e.g, Let's say you are building a
+        simple React app that manages a user's authentication state globally.
         The global state will track whether a user is logged in or logged out.
         This state needs to be accessible across various parts of the
-        application, such as a login form, a user profile page, and a header
-        that displays the login status.
+        application, such as a login form, the user profile page etc.
       </p>
     </div>
   );
