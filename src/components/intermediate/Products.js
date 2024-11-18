@@ -15,7 +15,7 @@ export default function Products({ productDetails }) {
           using a fake Api to fetch product data from the server.
         </h3>
         {/* I mapped through product here */}
-        <ul className="flex flex-col lg:flex-row justify-start items-start lg:items-center max-md:gap-y-5 lg:gap-x-5 mt-10">
+        <ul className="flex flex-row flex-wrap justify-center items-center max-md:gap-y-5 gap-x-5 mt-10">
           {productDetails.map((product) => (
             <Product key={product.id} product={product} />
           ))}
